@@ -2,25 +2,25 @@ class Crnd < Formula
   desc "Agent-first CLI for cron scheduling and process management"
   homepage "https://github.com/ysm-dev/crnd"
   license "MIT"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ysm-dev/crnd/releases/download/v#{version}/crnd-darwin-arm64.tar.gz"
-      sha256 "d3582af72164861d760ce87a89f595cc34354c1e607d6786b3eedb0fd6f11785"
+      sha256 "55f6e29c1db303b7f9584e7790ce2b677e2693af7ee6f9a0c74308f413865a6e"
     else
       url "https://github.com/ysm-dev/crnd/releases/download/v#{version}/crnd-darwin-x64.tar.gz"
-      sha256 "12c4634e07a356c142931e8cbeabad6123690e38805eb8662487ed5ca4b1a018"
+      sha256 "fb2dc5720d95b406d9efe91cb336d7082b44a7593f47683c825d23b06d39d3e6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ysm-dev/crnd/releases/download/v#{version}/crnd-linux-arm64.tar.gz"
-      sha256 "33e52d283a3d65c271b27c1b3bb8a1b20561ba2a1e109d207e6aca4d5378a731"
+      sha256 "ab62787a78e350d2d2fb6e54b047e67d1c5722c2d53aa71a04e3445a1fbd3356"
     else
       url "https://github.com/ysm-dev/crnd/releases/download/v#{version}/crnd-linux-x64.tar.gz"
-      sha256 "e95b0e4bacdfd44c503321f04908a7ac2fbde88432f3a91fd67aa394dec7e44d"
+      sha256 "b08d6b475b7592bcff65c7fb7b5df03d4fb9fa80fbb1fc219a0490444b8571c3"
     end
   end
 
